@@ -1,0 +1,149 @@
+.content {
+    grid-area: content;
+    line-height: 2;
+    margin-top: $navbar-height;
+    padding: 0 0 0 3.5rem;
+    span {
+        color: $green1;
+    }
+    .bkg-img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 200%;
+        opacity: 0.05;
+        background-image: url("../assets/images/Antikythera-1.svg");
+        background-size: 70%;
+        background-position: top;
+        background-repeat: no-repeat;
+        transition: top 0.25s;
+    }
+    .welcome {
+        min-height: calc(100vh - #{$navbar-height});
+        margin-bottom: 0rem;
+        /* wrap h1 words if their width > viewport width, avoiding body overflow
+        (these are technically the same, but better use both) */
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-word;
+        word-break: break-word;
+        h1 {
+            line-height: normal;
+            &:nth-child(1) {
+                margin-top: 0.75em;
+            }
+            &:nth-child(2) {
+                margin-top: 0;
+                & span {
+                    color: $red1;
+                }
+            }
+        }
+        // svg forward icon:
+        img.forward {
+            width: 1.2em;
+            margin: 0;
+        }
+        h2 {
+            display: inline-block;
+            margin: 0.55em 0 0.55em 0.05em;
+        }
+    }
+
+    main {
+        margin-bottom: 5rem;
+    }
+
+    h3 {
+        // ('about' and 'projects' sections headers)
+        // compensate for fixed positioned navbar
+        margin-top: -3.6rem;
+        padding-top: 3.6rem;
+    }
+    p {
+        margin: 1em 0 0 0.5em;
+    }
+    a {
+        color: $green2;
+        &:hover {
+            color: $white;
+        }
+    }
+    // svg rewind icon:
+    img.rewind {
+        width: 1.2em;
+        margin-left: 0.25em;
+    }
+    .contact {
+        margin-top: 6rem;
+        a {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-word;
+            word-break: break-word;
+            color: $green2;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES:
+// Large Desktop (>1280px)
+@media only screen and (min-width: 80.0625em) {
+    .content {
+        .welcome {
+            h1:nth-child(1), h2 {
+                margin-top: 1em;
+            }
+        }
+    }
+}
+// Tablet (768px)
+@media only screen and (max-width: 48em) {
+    .content {
+        padding-left: 2.5rem;
+        .welcome {
+            min-height: unset;
+            margin-bottom: 4rem;
+            h1:nth-child(1) {
+                margin-top: 0.5em;
+            }
+            h2 {
+                margin-top: 1em;
+            }
+        }
+    }
+}
+// layout breakpoint (600px)
+@media only screen and (max-width: 37.5em) {
+    .content {
+        padding: 0 1.4rem;
+    }
+}
+// Mobile-L (425px)
+@media only screen and (max-width: 26.5625em) {
+    .content {
+        padding: 0 1rem;
+        .welcome {
+            h1:nth-child(1) {
+                margin-top: 1em;
+            }
+        }
+        .bkg-img {
+            background-size: 100%;
+        }
+    }
+}
+// Mobile-M (375px)
+@media only screen and (max-width: 23.4375em) {
+    .content {
+        padding: 0 0.5rem;
+        .welcome {
+            padding-left: 1rem;
+        }
+    }
+}

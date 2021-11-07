@@ -1,0 +1,120 @@
+@import "modularscale";
+@import "variables";
+@import "bkg-noise";
+
+// font-sizes ratios for headers:
+// mobile S, 320px -> 20rem         ratio: 1.2
+// mobile L, 425px -> 26.5625rem    ratio: 1.25
+// tablet, 768px -> 48rem           ratio: 1.333
+// laptop, 1024px -> 64rem          ratio: 1.5
+
+// set modular scale for headers:
+$modularscale: (
+    20rem: (
+        base: 1rem,
+        ratio: 1.25,
+    ),
+    26.5625rem: (
+        ratio: 1.25,
+    ),
+    48rem: (
+        ratio: 1.333,
+    ),
+    64rem: (
+        ratio: 1.5,
+    ),
+);
+
+// GENERAL RULES, FONT SIZES, BODY AND GRID SETTINGS
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $rubik;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.0625rem;
+    color: $white;
+    background-color: $black;
+}
+
+h1 {
+    font-family: $synco;
+    margin: 0.3em 0 0;
+    @include ms-respond(font-size, 5);
+}
+h2 {
+    @extend h1;
+    @include ms-respond(font-size, 4);
+}
+h3 {
+    @extend h1;
+    margin-left: 0.32em; // align
+    @include ms-respond(font-size, 2);
+}
+h4 {
+    @extend h1;
+    @include ms-respond(font-size, 0);
+}
+// currently page is not using h5 elements
+h5 {
+    @extend h1;
+    @include ms-respond(font-size, 0);
+}
+
+nav {
+    li {
+        font-size: clamp(1.0rem, 1.0rem + 0.5vw, 1.25rem);
+    }
+}
+
+p {
+    font-size: clamp(0.9rem, 0.9rem + 0.5vw, 1.15rem);
+}
+
+// GRID
+// wraps .content, .social-icons and footer:
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    grid-template-rows: 1fr auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "content social-icons"
+        "footer social-icons";
+}
+
+@import "welcomeAnim";
+@import "navbar";
+@import "content";
+@import "projects";
+@import "social-icons";
+@import "footer";
+
+// MEDIA QUERIES:
+// Tablet (768px)
+@media only screen and (max-width: 48em) {
+    .layout-grid {
+        grid-template-columns: 1fr 100px;
+    }
+}
+
+// layout breakpoint (600px)
+@media only screen and (max-width: 37.5em) {
+    .layout-grid {
+        grid-template-rows: 1fr auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "content"
+            "social-icons"
+            "footer";
+    }
+}

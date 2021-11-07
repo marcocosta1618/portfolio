@@ -1,0 +1,78 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 2;
+    font-family: $prosto;
+    width: 100%;
+    height: $navbar-height;
+    padding-right: 1.2rem;
+    // content fadeout behind navbar:
+    background: linear-gradient(rgba(34, 34, 34, 1) 20%, 80%, rgba(34, 34, 34, 0) 100%);
+    .bkg-noise {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $navbar-height;
+        z-index: -1;
+        opacity: 0.15;
+        background-image: url('../assets/images/static-noise.png');
+        background-size: 150px; // original img size
+        animation: static .5s steps(3, jump-both) infinite;
+    }
+    ul {
+        list-style-type: none;
+        color: $white;
+        &:hover {
+            color: $grey1;
+        }
+        li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                margin: -0.5rem;
+                padding: 0.25rem 1rem;
+                color: inherit;
+                transition: color 0.4s ease-in;
+                // color fill on hover
+                &::before {
+                    position: absolute;
+                    content: attr(data-content);
+                    color: $green1;
+                    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+                    transition: clip-path 0.4s ease-in;
+                }
+                &:hover::before {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES:
+// Mobile-L (425px)
+@media only screen and (max-width: 26.5625em) {
+    nav {
+        justify-content: space-between;
+        padding-right: 0;
+        ul {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 19em) {
+    nav {
+        ul {
+            li {
+                &:nth-child(3) {
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Marco Costa. Developer based in Bologna, Italy">
+  <meta name="keywords" content="developer">
+  <meta name="author" content="Marco Costa">
+  <title>Marco Costa - Web Developer</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Rubik:wght@300;400&family=Syncopate:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="favicon-g(64x64).png">
+  <script src="https://kit.fontawesome.com/fbdf364255.js" crossorigin="anonymous"></script>
+  <script src="js/index.js" type="module"></script>
+</head>
+
+<body>
+  <div class="welcomeAnim"></div>
+  <nav>
+    <div class="bkg-noise"></div>
+    <ul>
+      <li><a href="#about" data-content="about.">about.</a></li>
+      <li><a href="#projects" data-content="projects.">projects.</a></li>
+      <li><a href="#contact" data-content="contact.">contact.</a></li>
+    </ul>
+  </nav>
+  <div class="layout-grid">
+    <div class="content">
+      <div class="bkg-noise"></div>
+      <div class="bkg-img"></div>
+      <div class="welcome">
+        <h1>Hello<span>,</span></h1>
+        <!-- <h1>I<span>'</span>m Marco<span>.</span></h1> -->
+        <h1>I<span>'</span>m Marco</h1>
+        <h2>
+          <img class="forward" src="assets/images/forward.svg" alt="forward-icon">
+          web developer
+          <!-- <span>.</span> -->
+        </h2>
+      </div>
+      <main>
+        <h3 id="about">About me.<img class="rewind" src="assets/images/rewind.svg" alt="rewind icon"></h3>
+        <p>I’m a self-taught developer from Italy. I have a background in music and an eye for design, but I’ve always
+          been passionate about technology. Coding has been part of my life since I started making electronic music
+          and developing
+          my small music apps or plugins.
+          One day I decided to turn this passion into a job, and I joined the freeCodeCamp learning program.
+          At the moment, I'm focusing on front-end development, JavaScript and the React framework, but I'm always
+          learning something new. My latest topics of interest are <a href="https://statecharts.dev/" rel="noreferrer" target="_blank">statecharts</a>,
+          <a href="https://xstate.js.org/docs/" rel="noreferrer" target="_blank">XState</a>, and <a href="https://d3js.org/" rel="noreferrer" target="_blank">D3.js</a>.
+        </p>
+      </main>
+      <section class="projects">
+        <h3 id="projects">projects.<img class="rewind" src="assets/images/rewind.svg" alt="rewind icon"></h3>
+        <div class="projects-grid">
+          <!-- html injected by renderProjects.js -->
+        </div>
+        <button type="button" class="projects-btn">
+          Show more
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <g id="_93-Arrow_Down" data-name="93-Arrow Down">
+              <path d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,30A14,14,0,1,1,30,16,14,14,0,0,1,16,30Z" />
+              <path d="M16,19.59,8.71,12.29,7.29,13.71l8,8a1,1,0,0,0,1.41,0l8-8-1.41-1.41Z" />
+            </g>
+          </svg>
+        </button>
+      </section>
+      <section class="contact">
+        <h3 id="contact">Contact.<img class="rewind" src="assets/images/rewind.svg" alt="rewind icon"></h3>
+        <p>You can reach me at
+          <a href="mailto:marcocosta1618&#064;gmail&#046;com" rel="noreferrer">marcocosta1618&#064;gmail&#046;com</a>. You can also
+          find all my
+          contact info on my resumé (<a href="downloads/Resume_(ITA).pdf" download>ITA</a> |
+          <a href="downloads/Resume_(ENG).pdf" download> ENG</a>).
+        </p>
+      </section>
+    </div>
+    <div class="social-icons">
+      <div>
+        <a href="https://github.com/marcocosta1618" rel="noreferrer" target="_blank">
+          <i class="fab fa-github" title="Github"></i>
+        </a>
+        <a href="https://www.freecodecamp.org/marcocosta1618" rel="noreferrer" target="_blank">
+          <i class="fab fa-free-code-camp" title="freeCodeCamp"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/marco-costa-9027ba67/" rel="noreferrer"target="_blank">
+          <i class="fab fa-linkedin" title="Linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <p>&copy;2021 Marco Costa.</p>
+      <a href="#top">back to top</a>
+    </footer>
+  </div>
+
+</body>
+
+</html>
