@@ -110,7 +110,7 @@ export const badges = {
   js: `<img src="https://img.shields.io/badge/JavaScript-f7df1e.svg?&logo=javascript&logoColor=black" width="85px" height="20px" alt="JavaScript badge">`,
   react: `<img src="https://img.shields.io/badge/REACT-grey.svg?&logo=react&logoColor=blue" width="65px" height="20px" alt="REACT badge">`,
   xstate: `<img src="https://img.shields.io/badge/XSTATE-000.svg?&logo=xstate&logoColor=white" width="71px" height="20px" alt="XSTATE badge">`,
-  d3: ``
+  d3: `<img src="https://img.shields.io/badge/D3.js-fff.svg?&logo=d3.js&logoColor=f5854b" width="57px" height="20px" alt="D3 badge">`,
 }
 
 /*
