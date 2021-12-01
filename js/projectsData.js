@@ -1,4 +1,14 @@
 export const projects = [
+  { // D3 - bar chart
+    projectUrl: "https://marcocosta1618.github.io/D3-barchart/",
+    projectCodeUrl: "https://github.com/marcocosta1618/D3-barchart",
+    imgWebp: "./assets/images/d3-barchart.webp",
+    imgPng: "./assets/images/d3-barchart.png",
+    imgAlt: "D3 barchart (US gdp trend 1947 - 2015)",
+    p: `Visualization of the US gross domestic product trend (yrs 1947-2015) with a bar chart, using <a href="https://d3js.org/"
+        rel="noreferrer" target="_blank">D3.js</a>.`,
+    technologies: ["d3", "sass"]
+  },
   { // Session Clock
     projectUrl: "https://marcocosta1618.github.io/Session-Clock/",
     projectCodeUrl: "https://github.com/marcocosta1618/Session-Clock",
