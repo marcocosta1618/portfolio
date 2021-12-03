@@ -38,8 +38,7 @@ html {
 }
 
 body {
-    font-family: $rubik;
-    font-weight: 400;
+    font-family: $kanit;
     font-size: 1rem;
     letter-spacing: 0.0625rem;
     color: $white;
@@ -72,12 +71,12 @@ h5 {
 
 nav {
     li {
-        font-size: clamp(1.0rem, 1.0rem + 0.5vw, 1.25rem);
+        font-size: clamp(0.85rem, 0.85rem + 0.5vw, 1.1rem);
     }
 }
 
 p {
-    font-size: clamp(0.9rem, 0.9rem + 0.5vw, 1.15rem);
+    font-size: clamp(0.85rem, 0.85rem + 0.5vw, 1.1rem);
 }
 
 // GRID
@@ -106,8 +105,7 @@ p {
         grid-template-columns: 1fr 100px;
     }
 }
-
-// layout breakpoint (600px)
+// layout breakpoint 1 (600px)
 @media only screen and (max-width: 37.5em) {
     .layout-grid {
         grid-template-rows: 1fr auto auto;
@@ -116,5 +114,11 @@ p {
             "content"
             "social-icons"
             "footer";
+    }
+}
+// layout breakpoint 2 (348px) (for navbar)
+@media only screen and (max-width: 21.75em) {
+    h2 {
+        font-size: 2.25rem;
     }
 }

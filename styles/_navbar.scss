@@ -5,7 +5,7 @@ nav {
     position: fixed;
     top: 0; left: 0;
     z-index: 2;
-    font-family: $prosto;
+    font-family: $synco;
     width: 100%;
     height: $navbar-height;
     padding-right: 1.2rem;
@@ -65,7 +65,8 @@ nav {
         }
     }
 }
-@media only screen and (max-width: 19em) {
+// layout breakpoint 2 (348px) (for navbar)
+@media only screen and (max-width: 21.75em) {
     nav {
         ul {
             li {
