@@ -18,7 +18,7 @@ export default function renderProjects() {
             </div>
             <picture>
               <source srcset=${project.imgWebp} type="image/webp">
-              <img class="project-image" src=${project.imgPng} width="1280px" height="726px" alt=${project.imgAlt}>
+              <img class="project-image" src=${project.imgPng} width="790px" height="448px" alt=${project.imgAlt}>
             </picture>
           </div>
           <p>${project.p}</p>
