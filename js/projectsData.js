@@ -1,4 +1,14 @@
 export const projects = [
+  { // D3 - scatterplot
+    projectUrl: "https://marcocosta1618.github.io/D3-scatterplot/",
+    projectCodeUrl: "https://github.com/marcocosta1618/D3-scatterplot",
+    imgWebp: "./assets/images/d3-scatterplot.webp",
+    imgPng: "./assets/images/d3-scatterplot.png",
+    imgAlt: "D3 scatterplot (Doping in professional bicycle racing)",
+    p: `Data visualization with a scatterplot in <a href="https://d3js.org/"
+        rel="noreferrer" target="_blank">D3.js</a> (doping in professional bicycle racing - Alpe d'Huez times, 1993 - 2016).`,
+    technologies: ["d3", "sass"]
+  },
   { // D3 - bar chart
     projectUrl: "https://marcocosta1618.github.io/D3-barchart/",
     projectCodeUrl: "https://github.com/marcocosta1618/D3-barchart",
