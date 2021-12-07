@@ -1,4 +1,13 @@
 export const projects = [
+  {
+    projectUrl: "https://marcocosta1618.github.io/D3-ordinalBarChart/",
+    projectCodeUrl: "https://github.com/marcocosta1618/D3-ordinalBarChart",
+    imgWebp: "./assets/images/d3-ordinalBarChart.webp",
+    imgPng: "./assets/images/d3-ordinalBarChart.png",
+    imgAlt: "D3 ordinal barchart (Monthly Global Heat map)",
+    p: `Visualization of the monthly global surface temperature of the Earth. Temperatures are mapped into colors using a diverging ordinal scale.`,
+    technologies: ["d3", "sass"]
+  },
   { // D3 - scatterplot
     projectUrl: "https://marcocosta1618.github.io/D3-scatterplot/",
     projectCodeUrl: "https://github.com/marcocosta1618/D3-scatterplot",
