@@ -1,5 +1,17 @@
 export const projects = [
   {
+    projectUrl: "https://marcocosta1618.github.io/D3-choroplethMap/",
+    projectCodeUrl: "https://github.com/marcocosta1618/D3-choroplethMap",
+    imgWebp: "./assets/images/d3-choroplethMap.webp",
+    imgPng: "./assets/images/d3-choroplethMap.png",
+    imgAlt: "D3 choropleth map (US education data)",
+    p: `The education data of the US counties are represented here on a choropleth map, with zooming and panning features. 
+        <a href="https://d3js.org/">D3.js</a> offers convenient tools to depict geographical data from GeoJSON and TopoJSON files. 
+        It also delivers data analysis tools (like <a href="https://observablehq.com/@d3/quantile-quantize-and-threshold-scales" 
+        rel="noreferrer" target="_blank">quantile scales</a>) used in this case to coax meaningful percentage intervals from the given data.`,
+    technologies: ["d3", "sass"]
+  },
+  {
     projectUrl: "https://marcocosta1618.github.io/D3-ordinalBarChart/",
     projectCodeUrl: "https://github.com/marcocosta1618/D3-ordinalBarChart",
     imgWebp: "./assets/images/d3-ordinalBarChart.webp",
