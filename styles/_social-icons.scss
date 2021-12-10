@@ -7,56 +7,32 @@
     div {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         position: fixed;
-        top: calc(50vh - 150px); // minus height/2
-        height: 300px;
+        top: calc(55vh - calc(60vh/2)); // minus height/2
+        width: 50px;
+        height: 60vh;
     }
     a {
-        i {
+        svg {
+            width: 100%;
             position: relative;
-            left: 1px;
-            font-size: 4rem;
-            margin: 1px;
-            color: $grey2;
-            opacity: 0.05;
+            fill: $grey2;
+            opacity: 0.075;
             transition: color 0.15s ease-in, opacity 0.15s ease-in;
             &:hover {
-                color: $green1;
+                fill: $green1;
                 opacity: 1 !important; // override javascript
             }
         }
-        &:nth-child(2) {
-            i {
-                font-size: 3.7rem;
+        &:nth-child(3) {
+            svg {
+                width: 92%;
+                margin-left: 2px;
             }
         }
     }
-}
-
-// MEDIA QUERIES
-// small device in landscape orientation (w < 600px && h < 425)
-@media only screen and (min-width: 37.5em) {
-    @media (max-height: 26.5625em) {
-        .social-icons {
-            div {
-                justify-content: space-around;
-                height: 240px;
-                top: calc(50vh - 120px); // minus height/2
-            }
-            a { 
-                i {
-                    font-size: 3.5rem;
-                }
-                &:nth-child(2) {
-                    i {
-                        font-size: 3.2rem;
-                    }
-                }
-            }
-        }
-    } 
 }
 
 // layout breakpoint (600px)
@@ -64,18 +40,29 @@
     .social-icons {
         div {
             flex-direction: row;
-            justify-content: space-evenly;
             position: static;
             width: 80%;
-            height: auto;
-            margin-top: 1rem;
+            height: 50px;
+            margin-top: 2rem;
         }
         a {
-            &:nth-child(1) {
-                i {
-                    font-size: 3.5rem;
+            svg,
+            &:nth-child(3) {
+                width: 40px;
+            }
+            &:nth-child(2) {
+                svg {
+                    width: 50px;
                 }
             }
+        }
+    }
+}
+// Mobile S (320px)
+@media only screen and (max-width: 20em) {
+    .social-icons {
+        div {
+            justify-content: space-between;
         }
     }
 }

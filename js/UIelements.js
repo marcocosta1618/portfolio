@@ -6,13 +6,13 @@ export default function UIelements() {
 
     const { _, h } = getViewportDim();
     // social media icons
-    const icons = document.querySelectorAll('.social-icons i');
+    const icons = document.querySelectorAll('.social-icons svg');
     // background-image
     const bkgImg = document.querySelector('div.bkg-img');
 
     function onScroll() {
         bkgImg.style.top = getScrollPos() * -300000 / h + 'px';
-        icons.forEach(icon => icon.style.opacity = 0.05 + getScrollPos() * 0.95);
+        icons.forEach(icon => icon.style.opacity = 0.075 + getScrollPos() * 0.95);
     }
     document.onscroll = throttle(onScroll, 80);
 
