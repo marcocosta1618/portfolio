@@ -206,7 +206,7 @@ p {
   grid-template-columns: 1fr 120px;
   grid-template-rows: 1fr auto;
   gap: 0px 0px;
-  grid-template-areas: "content social-icons" "footer social-icons";
+  grid-template-areas: "content social-icons" "footer footer";
 }
 
 div.welcomeAnim {
@@ -541,7 +541,7 @@ button {
   padding: 0.75em 0.75em;
   margin: 3rem auto 1rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   color: #F3F3F3;
   background-color: #8B59AF;
   transition: all 0.75s;
@@ -601,53 +601,47 @@ button.clicked svg {
 .social-icons div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   position: fixed;
-  top: calc(50vh - 150px);
-  height: 300px;
+  top: calc(55vh - calc(60vh/2));
+  width: 50px;
+  height: 60vh;
 }
-.social-icons a i {
+.social-icons a svg {
+  width: 100%;
   position: relative;
-  left: 1px;
-  font-size: 4rem;
-  margin: 1px;
-  color: #808080;
-  opacity: 0.05;
+  fill: #808080;
+  opacity: 0.075;
   transition: color 0.15s ease-in, opacity 0.15s ease-in;
 }
-.social-icons a i:hover {
-  color: #40D592;
+.social-icons a svg:hover {
+  fill: #40D592;
   opacity: 1 !important;
 }
-.social-icons a:nth-child(2) i {
-  font-size: 3.7rem;
+.social-icons a:nth-child(3) svg {
+  width: 92%;
+  margin-left: 2px;
 }
 
-@media only screen and (min-width: 37.5em) and (max-height: 26.5625em) {
-  .social-icons div {
-    justify-content: space-around;
-    height: 240px;
-    top: calc(50vh - 120px);
-  }
-  .social-icons a i {
-    font-size: 3.5rem;
-  }
-  .social-icons a:nth-child(2) i {
-    font-size: 3.2rem;
-  }
-}
 @media only screen and (max-width: 37.5em) {
   .social-icons div {
     flex-direction: row;
-    justify-content: space-evenly;
     position: static;
     width: 80%;
-    height: auto;
-    margin-top: 1rem;
+    height: 50px;
+    margin-top: 2rem;
   }
-  .social-icons a:nth-child(1) i {
-    font-size: 3.5rem;
+  .social-icons a svg, .social-icons a:nth-child(3) {
+    width: 40px;
+  }
+  .social-icons a:nth-child(2) svg {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .social-icons div {
+    justify-content: space-between;
   }
 }
 footer {
@@ -655,47 +649,22 @@ footer {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin: 4rem 0 1rem 3.5rem;
-  padding: 1.2rem 2rem;
+  margin: 4rem 1rem 1rem;
+  padding: 2rem;
   font-family: "Kanit", sans-serif;
   letter-spacing: normal;
   color: #F3F3F3;
   background-color: #8B59AF;
-  transition: -webkit-clip-path 0.5s;
-  transition: clip-path 0.5s;
-  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
-  -webkit-clip-path: polygon(0% 0%, 98.5% 20%, 100% 80%, 1.5% 100%);
-          clip-path: polygon(0% 0%, 98.5% 20%, 100% 80%, 1.5% 100%);
+  background: linear-gradient(to right, rgba(139, 89, 175, 0) 1%, #8b59af, rgba(139, 89, 175, 0) 99%);
 }
 footer p, footer a {
   font-size: clamp(0.8rem, 0.8rem + 0.1vw, 0.9rem);
   color: inherit;
 }
-footer:hover {
-  -webkit-clip-path: polygon(1.5% 20%, 100% 0%, 98.5% 100%, 0% 80%);
-          clip-path: polygon(1.5% 20%, 100% 0%, 98.5% 100%, 0% 80%);
-}
 
 @media only screen and (max-width: 48em) {
   footer {
     margin-left: 2rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  footer {
-    margin: 2.5rem 1rem 1rem;
-  }
-}
-@media only screen and (max-width: 26.5625em) {
-  footer {
-    margin: 4rem 0 0;
-    padding: 1.75rem 1.5rem 0.85rem;
-    -webkit-clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
-  }
-  footer:hover {
-    -webkit-clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 @media only screen and (max-width: 48em) {

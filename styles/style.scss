@@ -88,7 +88,7 @@ p {
     gap: 0px 0px;
     grid-template-areas:
         "content social-icons"
-        "footer social-icons";
+        "footer footer";
 }
 
 @import "welcomeAnim";
