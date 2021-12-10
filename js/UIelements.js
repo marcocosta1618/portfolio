@@ -12,7 +12,7 @@ export default function UIelements() {
 
     function onScroll() {
         bkgImg.style.top = getScrollPos() * -300000 / h + 'px';
-        icons.forEach(icon => icon.style.opacity = 0.075 + getScrollPos() * 0.95);
+        icons.forEach(icon => icon.style.opacity = 0.085 + getScrollPos() * 0.915);
     }
     document.onscroll = throttle(onScroll, 80);
 

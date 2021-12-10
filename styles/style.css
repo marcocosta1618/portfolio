@@ -612,7 +612,7 @@ button.clicked svg {
   width: 100%;
   position: relative;
   fill: #808080;
-  opacity: 0.075;
+  opacity: 0.085;
   transition: color 0.15s ease-in, opacity 0.15s ease-in;
 }
 .social-icons a svg:hover {
