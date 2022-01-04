@@ -649,24 +649,21 @@ footer {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin: 4rem 1rem 1rem;
-  padding: 2rem;
+  margin: 4rem 0 0;
+  padding: 2rem 0.5rem;
   font-family: "Kanit", sans-serif;
   letter-spacing: normal;
   color: #F3F3F3;
   background-color: #8B59AF;
-  background: linear-gradient(to right, rgba(139, 89, 175, 0) 1%, #8b59af, rgba(139, 89, 175, 0) 99%);
+  background: linear-gradient(to bottom, rgba(139, 89, 175, 0) 0%, #8b59af 90%, rgba(139, 89, 175, 0) 100%);
 }
 footer p, footer a {
   font-size: clamp(0.8rem, 0.8rem + 0.1vw, 0.9rem);
+  margin: 0 1rem;
+  padding: 1rem 0 0;
   color: inherit;
 }
 
-@media only screen and (max-width: 48em) {
-  footer {
-    margin-left: 2rem;
-  }
-}
 @media only screen and (max-width: 48em) {
   .layout-grid {
     grid-template-columns: 1fr 100px;
