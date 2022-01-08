@@ -1,5 +1,17 @@
 export const projects = [
-  {
+  { // D3 - tree map
+    projectUrl: "https://marcocosta1618.github.io/D3-treemap/",
+    projectCodeUrl: "https://github.com/marcocosta1618/D3-treemap",
+    imgWebp: "./assets/images/d3-treemap.webp",
+    imgPng: "./assets/images/d3-treemap.png",
+    imgAlt: "D3 treemap (sales data)",
+    p: `Most succesful kickstarters, movies, and videogames (grouped by category), depicted on a treemap; 
+        economic value is mapped linearly to the rects areas.
+        Transitions from a dataset to another (chosen by the three buttons on top) are animated using <a target="_blank" 
+        href="https://github.com/d3/d3/blob/main/API.md#transitions-d3-transition">D3 animated transitions</a>.`,
+    technologies: ["d3", "sass"]
+  },
+  { // D3 - choropleth map
     projectUrl: "https://marcocosta1618.github.io/D3-choroplethMap/",
     projectCodeUrl: "https://github.com/marcocosta1618/D3-choroplethMap",
     imgWebp: "./assets/images/d3-choroplethMap.webp",
@@ -11,7 +23,7 @@ export const projects = [
         rel="noreferrer" target="_blank">quantile scales</a>) used in this case to coax meaningful percentage intervals from the given data.`,
     technologies: ["d3", "sass"]
   },
-  {
+  { // D3 - ordinal bar chart
     projectUrl: "https://marcocosta1618.github.io/D3-ordinalBarChart/",
     projectCodeUrl: "https://github.com/marcocosta1618/D3-ordinalBarChart",
     imgWebp: "./assets/images/d3-ordinalBarChart.webp",
@@ -40,7 +52,7 @@ export const projects = [
         rel="noreferrer" target="_blank">D3.js</a>.`,
     technologies: ["d3", "sass"]
   },
-  { // Session Clock
+  { // React Session Clock
     projectUrl: "https://marcocosta1618.github.io/Session-Clock/",
     projectCodeUrl: "https://github.com/marcocosta1618/Session-Clock",
     imgWebp: "./assets/images/session-clock.webp",
@@ -77,7 +89,7 @@ export const projects = [
     p: `A Drum-machine app made in React. An exercise in events handling, wrapped in a cool styling.`,
     technologies: ["react", "sass"]
   },
-  { // Markdown previewer
+  { // React Markdown previewer
     projectUrl: "https://marcocosta1618.github.io/markdown-previewer/",
     projectCodeUrl: "https://github.com/marcocosta1618/markdown-previewer",
     imgWebp: "./assets/images/markdown-previewer.webp",
@@ -87,7 +99,7 @@ export const projects = [
         restored between browser sessions.`,
     technologies: ["react", "sass"]
   },
-  { // Random Quotes Machine
+  { // React Random Quotes Machine
     projectUrl: "https://marcocosta1618.github.io/stellar-quotes-machine/",
     projectCodeUrl: "https://github.com/marcocosta1618/stellar-quotes-machine",
     imgWebp: "./assets/images/random-quotes-machine.webp",
@@ -96,7 +108,7 @@ export const projects = [
     p: `A Random quotes Machine. My first React app.`,
     technologies: ["react", "sass"]
   },
-  { // Personal Portfolio
+  { // Personal Portfolio page
     projectUrl: "https://marcocosta1618.github.io/fcc-portfolio/",
     projectCodeUrl: "https://github.com/marcocosta1618/fcc-portfolio",
     imgWebp: "./assets/images/portfolio.webp",
@@ -115,7 +127,7 @@ export const projects = [
         using a mobile-first approach.`,
     technologies: ["html5", "sass", "js"]
   },
-  { // Product Landing
+  { // Product Landing page
     projectUrl: "https://marcocosta1618.github.io/pal-bt-product-landing/",
     projectCodeUrl: "https://github.com/marcocosta1618/pal-bt-product-landing",
     imgWebp: "./assets/images/product-landing.webp",
@@ -124,7 +136,7 @@ export const projects = [
     p: `A responsive product landing page example.`,
     technologies: ["html5", "css3"]
   },
-  { // Survey Form
+  { // Survey Form page
     projectUrl: "https://marcocosta1618.github.io/bookworm-survey-form/",
     projectCodeUrl: "https://github.com/marcocosta1618/bookworm-survey-form",
     imgWebp: "./assets/images/survey-form.webp",
@@ -155,7 +167,8 @@ export const badges = {
 }
 
 /*
-  { // 
+  projectData object
+  { // project name
     projectUrl: "",
     projectCodeUrl: "",
     imgWebp: "",
