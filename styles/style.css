@@ -655,7 +655,7 @@ footer {
   letter-spacing: normal;
   color: #F3F3F3;
   background-color: #8B59AF;
-  background: linear-gradient(to bottom, rgba(139, 89, 175, 0) 0%, #8b59af 90%, rgba(139, 89, 175, 0) 100%);
+  background: linear-gradient(to bottom, rgba(139, 89, 175, 0) 0%, #8b59af 95%, rgba(139, 89, 175, 0) 100%);
 }
 footer p, footer a {
   font-size: clamp(0.8rem, 0.8rem + 0.1vw, 0.9rem);
