@@ -5,7 +5,7 @@ export const projects = [
     imgWebp: "./assets/images/d3-treemap.webp",
     imgPng: "./assets/images/d3-treemap.png",
     imgAlt: "D3 treemap (sales data)",
-    p: `Most succesful kickstarters, movies, and videogames (grouped by category), depicted on a treemap; 
+    p: `Most successful kickstarters, movies, and videogames (grouped by category), depicted on a treemap; 
         economic value is mapped linearly to the rects areas.
         Transitions from a dataset to another (chosen by the three buttons on top) are animated using <a target="_blank" 
         href="https://github.com/d3/d3/blob/main/API.md#transitions-d3-transition">D3 animated transitions</a>.`,
