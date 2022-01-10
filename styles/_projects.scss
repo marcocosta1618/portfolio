@@ -2,13 +2,17 @@
     p {
         font-size: clamp(0.85rem, 0.85rem + 0.25vw, 1rem);
     }
+    h3 + p {
+        margin-left: 0.7rem;
+    }
 }
 
+// buttons for projectsFilter
 .techBtns-container {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin: 2rem 0.5rem;
+    margin: 2rem 0.6rem;
     //border: 1px solid grey;
     label {
         display: flex;
@@ -39,11 +43,13 @@
             filter: brightness(100%);
         }
         ~ div.btnLed {
-            background-color: $green2;
+            background-color: #92F0C5;
             box-shadow: 1px 1px 20px rgba(201, 250, 228, 0.4);
         }
     }
 }
+
+// projects grid and projects box settings
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -56,7 +62,6 @@
         display: none;
     }
     p {
-        //font-size: clamp(0.85rem, 0.85rem + 0.25vw, 1rem);
         line-height: 1.5;
         margin: 1rem 0 0.5rem;
         a {
@@ -141,6 +146,7 @@
     }
 }
 
+// show more/less button
 button {
     display: flex;
     align-items: center;

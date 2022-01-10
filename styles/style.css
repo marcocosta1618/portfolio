@@ -121,7 +121,7 @@ h2 {
 }
 
 h3 {
-  margin-left: 0.32em;
+  margin-left: 0.29em;
   font-size: 1.5625rem;
 }
 @media (min-width: 20rem) and (max-width: 26.5625rem) {
@@ -435,12 +435,15 @@ nav ul li a:hover::before {
 .projects p {
   font-size: clamp(0.85rem, 0.85rem + 0.25vw, 1rem);
 }
+.projects h3 + p {
+  margin-left: 0.7rem;
+}
 
 .techBtns-container {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 2rem 0.5rem;
+  margin: 2rem 0.6rem;
 }
 .techBtns-container label {
   display: flex;
@@ -471,7 +474,7 @@ nav ul li a:hover::before {
   filter: brightness(100%);
 }
 .techBtns-container input:checked ~ div.btnLed {
-  background-color: #66E2AA;
+  background-color: #92F0C5;
   box-shadow: 1px 1px 20px rgba(201, 250, 228, 0.4);
 }
 

@@ -56,7 +56,7 @@ h2 {
 }
 h3 {
     @extend h1;
-    margin-left: 0.32em; // align
+    margin-left: 0.29em; // align
     @include ms-respond(font-size, 2);
 }
 h4 {
