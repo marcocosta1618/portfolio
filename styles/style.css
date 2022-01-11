@@ -497,16 +497,16 @@ nav ul li a:hover::before {
 }
 .project-box .overlay a::after {
   position: absolute;
-  visibility: hidden;
   content: "";
-  width: 100%;
+  width: 0%;
   height: 2px;
   top: 100%;
   left: 0;
   background-color: #F3F3F3;
+  transition: width 0.3s;
 }
 .project-box .overlay a:hover::after {
-  visibility: visible;
+  width: 100%;
 }
 .project-box .project-image {
   width: 100%;
