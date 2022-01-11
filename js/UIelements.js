@@ -16,7 +16,33 @@ export default function UIelements() {
     }
     document.onscroll = throttle(onScroll, 80);
 
-    // hide early works
+    // filter projects with technologies buttons
+    const techButtons = document.querySelectorAll("input[type='checkbox']");
+    let selectedTech = [];
+
+    techButtons.forEach(button => button.addEventListener('click', filterProject));
+
+    function filterProject() {
+        // update selectedTech arr with chosen technology names
+        this.checked
+            ? selectedTech = selectedTech.concat(this.name)
+            : selectedTech = selectedTech.filter(tech => tech != [this.name])
+
+        // iterate each project
+        projects.forEach(project => {
+            // make an array out of technologies names in 'data.technologies' attribute
+            const projectTech = project.dataset.tech.split(' ');
+            // initially add 'filtered' class from each prj
+            project.classList.add('filterOut');
+            // remove 'filterOut' class if a prj's tech matches any element of selectedTech array
+            projectTech.forEach(tech =>
+                selectedTech.indexOf(tech) !== -1 && project.classList.remove('filterOut'));
+            // if no technology is selected, remove 'filterOut' class to each prj (display all)
+            selectedTech.length === 0 && project.classList.remove('filterOut')
+        })
+    }
+
+    // hide early works on pageload
     const projects = document.querySelectorAll(".projects-grid > div");
     const earlierprojects = Array.from(projects).slice(6);
     earlierprojects.forEach(project => project.classList.toggle("hidden"));

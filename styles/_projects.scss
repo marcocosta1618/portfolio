@@ -13,30 +13,29 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 2rem 0.6rem;
-    //border: 1px solid grey;
     label {
         display: flex;
         flex-direction: column;
-        //justify-content: center;
         align-items: center;
-        cursor: pointer;
         width: fit-content;
-        margin-right: 1rem;
+        margin: 1rem 1rem 0 0;
+        cursor: pointer;
     }
     input {
         display: none;
     }
     img {
         filter: brightness(55%);
+        transition: filter 0.3s;
     }
     div.btnLed {
-        width: 100%;
+        width: 90%;
         height: 6px;
         margin: 3px 0 0;
         border: 1px solid #333;
         background-color: $grey1;
         border-radius: 4px;
-        transition: width 0.25s;
+        transition: all 0.3s;
     }
     input:checked {
         + img {
@@ -44,6 +43,7 @@
         }
         ~ div.btnLed {
             background-color: #92F0C5;
+            border: 1px solid $green1;
             box-shadow: 1px 1px 20px rgba(201, 250, 228, 0.4);
         }
     }
@@ -57,8 +57,12 @@
     column-gap: 2rem;
     padding-left: 0.7rem;
     margin: 2rem auto;
-    // show/hide earlier projects (button toggles class .hidden)
+    // show/hide earlier projects
     & > div.hidden {
+        display: none;
+    }
+    // show/hide prj with technologies buttons
+    & > div.filterOut {
         display: none;
     }
     p {
@@ -109,16 +113,16 @@
             &::after {
                 // custom underline on hover
                 position: absolute;
-                visibility: hidden;
                 content: "";
-                width: 100%;
+                width: 0%;
                 height: 2px;
                 top: 100%;
                 left: 0;
                 background-color: $white;
+                transition: width 0.3s;
             }
             &:hover::after {
-                visibility: visible;
+                width: 100%;
             }
         }
     }
