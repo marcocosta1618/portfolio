@@ -56,7 +56,7 @@ export default function welcomeAnim() {
             cleanup = setTimeout(() => {
                 body.style.overflowY = 'auto';
                 container.style.zIndex = -3;
-                container.replaceChildren();
+                container.remove();
             }, 500) // n of ms should be equal to div.tile opacity transition time
         }
     }
