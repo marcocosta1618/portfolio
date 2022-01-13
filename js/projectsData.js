@@ -9,7 +9,7 @@ export const projects = [
         economic value is mapped linearly to the rects areas.
         Transitions from a dataset to another (chosen by the three buttons on top) are animated using <a target="_blank" 
         href="https://github.com/d3/d3/blob/main/API.md#transitions-d3-transition">D3 animated transitions</a>.`,
-    technologies: ["d3", "sass"]
+    technologies: ["d3", "javascript", "sass"]
   },
   { // D3 - choropleth map
     projectUrl: "https://marcocosta1618.github.io/D3-choroplethMap/",
@@ -21,7 +21,7 @@ export const projects = [
         <a href="https://d3js.org/">D3.js</a> offers convenient tools to depict geographical data from GeoJSON and TopoJSON files. 
         It also delivers data analysis tools (like <a href="https://observablehq.com/@d3/quantile-quantize-and-threshold-scales" 
         rel="noreferrer" target="_blank">quantile scales</a>) used in this case to coax meaningful percentage intervals from the given data.`,
-    technologies: ["d3", "sass"]
+    technologies: ["d3", "javascript", "sass"]
   },
   { // D3 - ordinal bar chart
     projectUrl: "https://marcocosta1618.github.io/D3-ordinalBarChart/",
@@ -30,7 +30,7 @@ export const projects = [
     imgPng: "./assets/images/d3-ordinalBarChart.png",
     imgAlt: "D3 ordinal barchart (Monthly Global Heat map)",
     p: `Visualization of the monthly global surface temperature of the Earth. Temperatures are mapped into colors using a diverging ordinal scale.`,
-    technologies: ["d3", "sass"]
+    technologies: ["d3", "javascript", "sass"]
   },
   { // D3 - scatterplot
     projectUrl: "https://marcocosta1618.github.io/D3-scatterplot/",
@@ -40,7 +40,7 @@ export const projects = [
     imgAlt: "D3 scatterplot (Doping in professional bicycle racing)",
     p: `Data visualization with a scatterplot in <a href="https://d3js.org/"
         rel="noreferrer" target="_blank">D3.js</a> (doping in professional bicycle racing - Alpe d'Huez times, 1993 - 2016).`,
-    technologies: ["d3", "sass"]
+    technologies: ["d3", "javascript", "sass"]
   },
   { // D3 - bar chart
     projectUrl: "https://marcocosta1618.github.io/D3-barchart/",
@@ -50,7 +50,7 @@ export const projects = [
     imgAlt: "D3 barchart (US gdp trend 1947 - 2015)",
     p: `Visualization of the US gross domestic product trend (yrs 1947-2015) with a bar chart, using <a href="https://d3js.org/"
         rel="noreferrer" target="_blank">D3.js</a>.`,
-    technologies: ["d3", "sass"]
+    technologies: ["d3", "javascript", "sass"]
   },
   { // React Session Clock
     projectUrl: "https://marcocosta1618.github.io/Session-Clock/",
@@ -64,7 +64,7 @@ export const projects = [
         to manage the application state. Here is the
         <a href="https://xstate.js.org/viz/?gist=8ee2c8d13d3863ac307f57535e0e84ca" 
         rel="noreferrer" target="_blank">functional statechart</a> for the finite state machine used.`,
-    technologies: ["react", "xstate", "sass"]
+    technologies: ["react", "xstate", "javascript", "sass"]
   },
   { // React Calculator
     projectUrl: "https://marcocosta1618.github.io/JavaScript-Calculator/",
@@ -78,7 +78,7 @@ export const projects = [
         application state. It also recreates the classic Apple's desktop calculator styling. Here is the
         <a href="https://xstate.js.org/viz/?gist=edf865a72430b9f1cf4c291e326dd4bf" rel="noreferrer" target="_blank">functional
         statechart</a> for the finite state machine used.`,
-    technologies: ["react", "xstate", "sass"]
+    technologies: ["react", "xstate", "javascript", "sass"]
   },
   { // React drum-machine 
     projectUrl: "https://marcocosta1618.github.io/drum-machine/",
@@ -87,7 +87,7 @@ export const projects = [
     imgPng: "./assets/images/react-drum-machine.png",
     imgAlt: "React-drum-machine.",
     p: `A Drum-machine app made in React. An exercise in events handling, wrapped in a cool styling.`,
-    technologies: ["react", "sass"]
+    technologies: ["react", "javascript", "sass"]
   },
   { // React Markdown previewer
     projectUrl: "https://marcocosta1618.github.io/markdown-previewer/",
@@ -97,7 +97,7 @@ export const projects = [
     imgAlt: "React-markdown-previewer.",
     p: `A Markdown previewer made in React. The user's markdown is saved in local storage and
         restored between browser sessions.`,
-    technologies: ["react", "sass"]
+    technologies: ["react", "javascript", "sass"]
   },
   { // React Random Quotes Machine
     projectUrl: "https://marcocosta1618.github.io/stellar-quotes-machine/",
@@ -106,7 +106,7 @@ export const projects = [
     imgPng: "./assets/images/random-quotes-machine.png",
     imgAlt: "Random-quotes-machine.",
     p: `A Random quotes Machine. My first React app.`,
-    technologies: ["react", "sass"]
+    technologies: ["react", "javascript", "sass"]
   },
   { // Personal Portfolio page
     projectUrl: "https://marcocosta1618.github.io/fcc-portfolio/",
@@ -125,7 +125,7 @@ export const projects = [
     imgAlt: "Technical-documentation-page.",
     p: `A responsive technical documentation page about the Git version control system,
         using a mobile-first approach.`,
-    technologies: ["html5", "sass", "js"]
+    technologies: ["html5", "javascript", "sass"]
   },
   { // Product Landing page
     projectUrl: "https://marcocosta1618.github.io/pal-bt-product-landing/",
@@ -160,7 +160,7 @@ export const badges = {
   html5: `<img src="https://img.shields.io/badge/HTML5-red.svg?&logo=html5&logoColor=white" width="65px" height="20px" alt="HTML5 badge">`,
   css3: `<img src="https://img.shields.io/badge/CSS3-blue.svg?&logo=css3&logoColor=white" width="57px" height="20px" alt="CSS3 badge">`,
   sass: `<img src="https://img.shields.io/badge/SASS-cc6699.svg?&logo=sass&logoColor=white" width="59px" height="20px" alt="SASS badge">`,
-  js: `<img src="https://img.shields.io/badge/JavaScript-f7df1e.svg?&logo=javascript&logoColor=black" width="85px" height="20px" alt="JavaScript badge">`,
+  javascript: `<img src="https://img.shields.io/badge/JavaScript-f7df1e.svg?&logo=javascript&logoColor=black" width="85px" height="20px" alt="JavaScript badge">`,
   react: `<img src="https://img.shields.io/badge/REACT-grey.svg?&logo=react&logoColor=blue" width="65px" height="20px" alt="REACT badge">`,
   xstate: `<img src="https://img.shields.io/badge/XSTATE-000.svg?&logo=xstate&logoColor=white" width="71px" height="20px" alt="XSTATE badge">`,
   d3: `<img src="https://img.shields.io/badge/D3.js-fff.svg?&logo=d3.js&logoColor=f5854b" width="57px" height="20px" alt="D3 badge">`,

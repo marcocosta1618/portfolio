@@ -4,13 +4,18 @@ export default function renderProjects() {
   const projectsGrid = document.querySelector('div.projects-grid');
 
   projects.forEach(project => {
-    // collect project technology badges
+    // data-tech attr
+    let dataTechAttr = '';
+    // project technologies badges
     let projectBadges = '';
+
     project.technologies.forEach(technology => {
-      projectBadges += badges[technology] + "\n"
+      dataTechAttr += technology + ' ';
+      projectBadges += badges[technology] + '\n';
     });
-    const projectHTML =
-      `<div>
+
+    const projectHTML =           // remove last space
+     `<div data-tech="${dataTechAttr.replace(/ $/, '')}">
           <div class="project-box">
             <div class="overlay">
               <h4><a href=${project.projectUrl} rel="noreferrer" target="_blank">view</a></h4>
@@ -23,7 +28,7 @@ export default function renderProjects() {
           </div>
           <p>${project.p}</p>
           ${projectBadges}
-        </div>`
-        projectsGrid.insertAdjacentHTML('beforeend', projectHTML)
+      </div>`
+      projectsGrid.insertAdjacentHTML('beforeend', projectHTML)
   })
 }
