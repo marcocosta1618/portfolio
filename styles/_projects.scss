@@ -7,47 +7,7 @@
     }
 }
 
-// buttons for projectsFilter
-.techBtns-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: 2rem 0.6rem;
-    label {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: fit-content;
-        margin: 1rem 1rem 0 0;
-        cursor: pointer;
-    }
-    input {
-        display: none;
-    }
-    img {
-        filter: brightness(55%);
-        transition: filter 0.3s;
-    }
-    div.btnLed {
-        width: 90%;
-        height: 6px;
-        margin: 3px 0 0;
-        border: 1px solid #333;
-        background-color: $grey1;
-        border-radius: 4px;
-        transition: all 0.3s;
-    }
-    input:checked {
-        + img {
-            filter: brightness(100%);
-        }
-        ~ div.btnLed {
-            background-color: #92F0C5;
-            border: 1px solid $green1;
-            box-shadow: 1px 1px 20px rgba(201, 250, 228, 0.4);
-        }
-    }
-}
+@import "techBtns";
 
 // projects grid and projects box settings
 .projects-grid {
