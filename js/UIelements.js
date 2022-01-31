@@ -32,7 +32,7 @@ export default function UIelements() {
         projects.forEach(project => {
             // make an array out of technologies names in 'data.technologies' attribute
             const projectTech = project.dataset.tech.split(' ');
-            // initially add 'filtered' class from each prj
+            // initially add 'filtered' class to each prj
             project.classList.add('filterOut');
             // remove 'filterOut' class if a prj's tech matches any element of selectedTech array
             projectTech.forEach(tech =>
