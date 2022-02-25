@@ -16,6 +16,22 @@ export default function UIelements() {
     }
     document.onscroll = throttle(onScroll, 80);
 
+    // hide early works on pageload
+    const allProjects = document.querySelectorAll(".projects-grid > div");
+    const earlierProjects = Array.from(allProjects).slice(6);
+    earlierProjects.forEach(project => project.classList.toggle("hidden"));
+
+    // show/hide early projects button:
+    const projectsBtn = document.querySelector(".projects-btn");
+
+    projectsBtn.onclick = () => {
+        earlierProjects.forEach(project => project.classList.toggle("hidden"));
+        projectsBtn.classList.toggle('clicked');
+        projectsBtn.innerText === "Show more"
+            ? projectsBtn.innerHTML = projectsBtn.innerHTML.replace('more', 'less')
+            : projectsBtn.innerHTML = projectsBtn.innerHTML.replace('less', 'more')
+    }
+
     // filter projects with technologies buttons
     const techButtons = document.querySelectorAll("input[type='checkbox']");
     let selectedTech = [];
@@ -27,12 +43,11 @@ export default function UIelements() {
         this.checked
             ? selectedTech = selectedTech.concat(this.name)
             : selectedTech = selectedTech.filter(tech => tech != [this.name])
-
         // iterate each project
-        projects.forEach(project => {
+        allProjects.forEach(project => {
             // make an array out of technologies names in 'data.technologies' attribute
             const projectTech = project.dataset.tech.split(' ');
-            // initially add 'filtered' class to each prj
+            // initially add 'filterOut' class to each prj
             project.classList.add('filterOut');
             // remove 'filterOut' class if a prj's tech matches any element of selectedTech array
             projectTech.forEach(tech =>
@@ -40,21 +55,11 @@ export default function UIelements() {
             // if no technology is selected, remove 'filterOut' class to each prj (display all)
             selectedTech.length === 0 && project.classList.remove('filterOut')
         })
-    }
-
-    // hide early works on pageload
-    const projects = document.querySelectorAll(".projects-grid > div");
-    const earlierprojects = Array.from(projects).slice(6);
-    earlierprojects.forEach(project => project.classList.toggle("hidden"));
-
-    // show/hide early projects button:
-    const projectsButton = document.querySelector(".projects-btn");
-
-    projectsButton.onclick = () => {
-        earlierprojects.forEach(project => project.classList.toggle("hidden"));
-        projectsButton.classList.toggle('clicked');
-        projectsButton.innerText === "Show more"
-            ? projectsButton.innerHTML = projectsButton.innerHTML.replace('more', 'less')
-            : projectsButton.innerHTML = projectsButton.innerHTML.replace('less', 'more')
+        // after techButtons have been clicked, check how many projects are visible
+        const visibleProjects = document.querySelectorAll('.projects-grid > div:not(.hidden):not(.filterOut)')
+        // if only one is, clicks 'Show more' button
+        visibleProjects.length <= 1 && projectsBtn.innerText === 'Show more' && projectsBtn.click()
+        // if more than 6 are, clicks 'Show less' button
+        visibleProjects.length > 6 && projectsBtn.innerText === 'Show less' && projectsBtn.click()
     }
 }
