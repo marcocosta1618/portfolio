@@ -658,7 +658,7 @@ button.clicked svg {
   justify-content: space-evenly;
   align-items: center;
   position: fixed;
-  top: calc(55vh - calc(60vh/2));
+  top: 25vh;
   width: 50px;
   height: 60vh;
 }
