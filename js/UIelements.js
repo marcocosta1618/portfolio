@@ -10,6 +10,7 @@ export default function UIelements() {
     // background-image
     const bkgImg = document.querySelector('div.bkg-img');
 
+    // background img 'parallax' effect
     function onScroll() {
         bkgImg.style.top = getScrollPos() * -300000 / h + 'px';
         icons.forEach(icon => icon.style.opacity = 0.085 + getScrollPos() * 0.915);
@@ -23,7 +24,6 @@ export default function UIelements() {
 
     // show/hide early projects button:
     const projectsBtn = document.querySelector(".projects-btn");
-
     projectsBtn.onclick = () => {
         earlierProjects.forEach(project => project.classList.toggle("hidden"));
         projectsBtn.classList.toggle('clicked');
@@ -35,7 +35,6 @@ export default function UIelements() {
     // filter projects with technologies buttons
     const techButtons = document.querySelectorAll("input[type='checkbox']");
     let selectedTech = [];
-
     techButtons.forEach(button => button.addEventListener('click', filterProject));
 
     function filterProject() {
