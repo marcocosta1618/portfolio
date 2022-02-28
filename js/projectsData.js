@@ -18,7 +18,7 @@ export const projects = [
     p: `Most successful kickstarters, movies, and videogames (grouped by category), depicted on a treemap; 
         economic value is mapped linearly to the rects areas.
         Transitions from a dataset to another (chosen by the three buttons on top) are animated using <a target="_blank" 
-        href="https://github.com/d3/d3/blob/main/API.md#transitions-d3-transition">D3 animated transitions</a>.`,
+        href="https://github.com/d3/d3/blob/main/API.md#transitions-d3-transition" rel="noreferrer">D3 animated transitions</a>.`,
     technologies: ["d3", "javascript", "sass"]
   },
   { // D3 - choropleth map
@@ -68,7 +68,7 @@ export const projects = [
     imgWebp: "./assets/images/session-clock.webp",
     imgPng: "./assets/images/session-clock.png",
     imgAlt: "Session-Clock.",
-    p: `A Session-Clock app made in React. It uses a 
+    p: `A Session-Clock app made with React. It uses a 
         <a href="https://en.wikipedia.org/wiki/Finite-state_machine" rel="noreferrer" target="_blank">
         finite state machine</a> and <a href="https://xstate.js.org/docs/" rel="noreferrer" target="_blank">xstate</a> 
         to manage the application state. Here is the
@@ -82,7 +82,7 @@ export const projects = [
     imgWebp: "./assets/images/react-calculator.webp",
     imgPng: "./assets/images/react-calculator.png",
     imgAlt: "React-calculator.",
-    p: `A Calculator app made in React. It uses a <a
+    p: `A Calculator app made with React. It uses a <a
         href="https://en.wikipedia.org/wiki/Finite-state_machine" rel="noreferrer" target="_blank">finite state
         machine</a> and <a href="https://xstate.js.org/docs/" rel="noreferrer" target="_blank">xstate</a> to manage the
         application state. It also recreates the classic Apple's desktop calculator styling. Here is the
@@ -96,7 +96,7 @@ export const projects = [
     imgWebp: "./assets/images/react-drum-machine.webp",
     imgPng: "./assets/images/react-drum-machine.png",
     imgAlt: "React-drum-machine.",
-    p: `A Drum-machine app made in React. An exercise in events handling, wrapped in a cool styling.`,
+    p: `A Drum-machine app made with React. An exercise in events handling, wrapped in a cool styling.`,
     technologies: ["react", "javascript", "sass"]
   },
   { // React Markdown previewer
@@ -105,7 +105,7 @@ export const projects = [
     imgWebp: "./assets/images/markdown-previewer.webp",
     imgPng: "./assets/images/markdown-previewer.png",
     imgAlt: "React-markdown-previewer.",
-    p: `A Markdown previewer made in React. The user's markdown is saved in local storage and
+    p: `A Markdown previewer made with React. The user's markdown is saved in local storage and
         restored between browser sessions.`,
     technologies: ["react", "javascript", "sass"]
   },
