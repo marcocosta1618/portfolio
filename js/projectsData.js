@@ -1,4 +1,14 @@
 export const projects = [
+  { // API - timestamp microservice
+    projectUrl: "https://timestamp-microservice-fcc.vercel.app/",
+    projectCodeUrl: "https://github.com/marcocosta1618/microservice-timestamp",
+    imgWebp: "./assets/images/API-timestamp_ms.png",
+    imgPng: "./assets/images/API-timestamp_ms.webp",
+    imgAlt: "timestamp microservice",
+    p: `A timestamp microservice API made with <a href="https://expressjs.com/" target="_blank"
+        rel="noreferrer">Express.js</a>.`,
+    technologies: ["express", "javascript", "css3"]
+  },
   { // D3 - tree map
     projectUrl: "https://marcocosta1618.github.io/D3-treemap/",
     projectCodeUrl: "https://github.com/marcocosta1618/D3-treemap",
@@ -164,6 +174,7 @@ export const badges = {
   react: `<img src="https://img.shields.io/badge/REACT-grey.svg?&logo=react&logoColor=blue" width="65px" height="20px" alt="REACT badge">`,
   xstate: `<img src="https://img.shields.io/badge/XSTATE-000.svg?&logo=xstate&logoColor=white" width="71px" height="20px" alt="XSTATE badge">`,
   d3: `<img src="https://img.shields.io/badge/D3.js-fff.svg?&logo=d3.js&logoColor=f5854b" width="57px" height="20px" alt="D3 badge">`,
+  express: `<img src="https://img.shields.io/badge/Express.js-fff.svg?&logo=Express&logoColor=000" width="85px", height="20px" alt="Express badge">`,
 }
 
 /*
