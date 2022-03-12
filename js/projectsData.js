@@ -1,4 +1,14 @@
 export const projects = [
+  { // Request Header Parser microsevice
+    projectUrl: "https://req-header-parser-microservice.vercel.app/",
+    projectCodeUrl: "https://github.com/marcocosta1618/request-header-parser",
+    imgWebp: "./assets/images/API-headerParser_ms.png",
+    imgPng: "./assets/images/API-headerParser_ms.webp",
+    imgAlt: "header parser microservice",
+    p: `A Request Header parser microservice API made with <a href="https://expressjs.com/" target="_blank"
+    rel="noreferrer">Express.js</a>.`,
+    technologies: ["express", "javascript", "css3"]
+  },
   { // API - timestamp microservice
     projectUrl: "https://timestamp-microservice-fcc.vercel.app/",
     projectCodeUrl: "https://github.com/marcocosta1618/microservice-timestamp",
