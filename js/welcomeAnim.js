@@ -1,7 +1,7 @@
 import getViewportDim from "./helperFn/getViewportDim.js";
 import gridAreas from "./gridAreas.js";
 
-export default function welcomeAnim() {
+export default (function welcomeAnim() {
 
     const { w, h } = getViewportDim();
     const body = document.querySelector("body");
@@ -62,4 +62,4 @@ export default function welcomeAnim() {
     }
     // clear last timer
     clearInterval(cleanup);
-}
+})();
