@@ -1,4 +1,15 @@
 export const projects = [
+  { // URL Shortener microservice
+    projectUrl: "https://url-shortner-microservice.vercel.app/",
+    projectCodeUrl: "https://github.com/marcocosta1618/urlShortener-microservice/blob/main/README.md",
+    imgWebp: "./assets/images/API-urlShortener_ms.webp",
+    imgPng: "./assets/images/API-urlShortener_ms.png",
+    imgAlt: "url shortener microservice",
+    p: `A URL Shortener microservice made with <a href="https://expressjs.com/" target="_blank"
+        rel="noreferrer">Express.js</a> and <a href="https://www.mongodb.com/" target="_blank"
+        rel="noreferrer">MongoDB.</a>`,
+    technologies: ["express", "mongodb", "javascript", "css3"]
+  },
   { // Request Header Parser microsevice
     projectUrl: "https://req-header-parser-microservice.vercel.app/",
     projectCodeUrl: "https://github.com/marcocosta1618/request-header-parser",
@@ -6,7 +17,7 @@ export const projects = [
     imgPng: "./assets/images/API-headerParser_ms.webp",
     imgAlt: "header parser microservice",
     p: `A Request Header parser microservice API made with <a href="https://expressjs.com/" target="_blank"
-    rel="noreferrer">Express.js</a>.`,
+        rel="noreferrer">Express.js</a>.`,
     technologies: ["express", "javascript", "css3"]
   },
   { // API - timestamp microservice
@@ -185,6 +196,7 @@ export const badges = {
   xstate: `<img src="https://img.shields.io/badge/XSTATE-000.svg?&logo=xstate&logoColor=white" width="71px" height="20px" alt="XSTATE badge">`,
   d3: `<img src="https://img.shields.io/badge/D3.js-fff.svg?&logo=d3.js&logoColor=f5854b" width="57px" height="20px" alt="D3 badge">`,
   express: `<img src="https://img.shields.io/badge/Express.js-fff.svg?&logo=Express&logoColor=000" width="85px", height="20px" alt="Express badge">`,
+  mongodb: `<img src="https://img.shields.io/badge/MongoDB-fff.svg?&logo=MongoDB&logoColor=#47A248" width="80px", height="20px" alt="MongoDB badge">`
 }
 
 /*
