@@ -1,5 +1,5 @@
 export const projects = [
-  { // URL Shortener microservice
+  { // API - URL Shortener microservice
     projectUrl: "https://url-shortner-microservice.vercel.app/",
     projectCodeUrl: "https://github.com/marcocosta1618/urlShortener-microservice/blob/main/README.md",
     imgWebp: "./assets/images/API-urlShortener_ms.webp",
@@ -10,7 +10,7 @@ export const projects = [
         rel="noreferrer">MongoDB.</a>`,
     technologies: ["express", "mongodb", "javascript", "css3"]
   },
-  { // Request Header Parser microsevice
+  { // API - Request Header Parser microsevice
     projectUrl: "https://req-header-parser-microservice.vercel.app/",
     projectCodeUrl: "https://github.com/marcocosta1618/request-header-parser",
     imgWebp: "./assets/images/API-headerParser_ms.png",
