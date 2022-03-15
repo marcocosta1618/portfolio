@@ -3,17 +3,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin: 4rem 0 0;
+    margin: 4rem 1rem 1rem;
     padding: 2rem 0.5rem;
     font-family: $kanit;
     letter-spacing: normal;
     color: $white;
+    border-radius: 5px;
     background-color: $purple1;
-    background: linear-gradient(to bottom, rgba(139, 89, 175, 0) 0%, rgba(139, 89, 175, 1) 95%, rgba(139, 89, 175, 0) 100%);
+    //background: linear-gradient(to bottom, rgba(139, 89, 175, 0) 0%, rgba(139, 89, 175, 1) 95%, rgba(139, 89, 175, 0) 100%);
     p, a {
-        font-size: clamp(0.8rem, 0.8rem + 0.1vw, 0.9rem);
+        font-size: clamp(0.8rem, 0.8rem + 0.15vw, 0.9rem);
         margin: 0 1rem;
-        padding: 1rem 0 0;
+        padding: 0.5rem 0 0;
         color: inherit;
     }
 }
