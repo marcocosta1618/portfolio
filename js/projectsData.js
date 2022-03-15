@@ -1,3 +1,16 @@
+/*
+  projectData object
+  { // PROJECT NAME
+    projectUrl: "",
+    projectCodeUrl: "",
+    imgWebp: "",
+    imgPng: "",
+    imgAlt: "",
+    p: ``,
+    technologies: []
+  },
+*/
+
 export const projects = [
   { // API - URL Shortener microservice
     projectUrl: "https://url-shortner-microservice.vercel.app/",
@@ -198,16 +211,3 @@ export const badges = {
   express: `<img src="https://img.shields.io/badge/Express.js-fff.svg?&logo=Express&logoColor=000" width="85px", height="20px" alt="Express badge">`,
   mongodb: `<img src="https://img.shields.io/badge/MongoDB-fff.svg?&logo=MongoDB&logoColor=#47A248" width="80px", height="20px" alt="MongoDB badge">`
 }
-
-/*
-  projectData object
-  { // project name
-    projectUrl: "",
-    projectCodeUrl: "",
-    imgWebp: "",
-    imgPng: "",
-    imgAlt: "",
-    p: ``,
-    technologies: []
-  },
-*/
