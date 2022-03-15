@@ -56,8 +56,8 @@ export default function UIelements() {
         })
         // after techButtons have been clicked, check how many projects are visible
         const visibleProjects = document.querySelectorAll('.projects-grid > div:not(.hidden):not(.filterOut)')
-        // if only one is, clicks 'Show more' button
-        visibleProjects.length <= 1 && projectsBtn.innerText === 'Show more' && projectsBtn.click()
+        // if only 3 or less are, clicks 'Show more' button
+        visibleProjects.length <= 3 && projectsBtn.innerText === 'Show more' && projectsBtn.click()
         // if more than 6 are, clicks 'Show less' button
         visibleProjects.length > 6 && projectsBtn.innerText === 'Show less' && projectsBtn.click()
     }
