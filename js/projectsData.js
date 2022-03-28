@@ -12,6 +12,19 @@
 */
 
 export const projects = [
+  { // API - Exercise Tracker
+    projectUrl: "https://exercise-tracker-three.vercel.app/",
+    projectCodeUrl: "https://github.com/marcocosta1618/exercise-tracker",
+    imgWebp: "./assets/images/API-exerciseTracker.webp",
+    imgPng: "./assets/images/API-exerciseTracker.png",
+    imgAlt: "exercise tracker app",
+    p: `An Exercise Tracker app. Users can can obtain a unique id and create, 
+        save and retrieve records of their activities. 
+        Made with <a href="https://expressjs.com/" target="_blank"
+        rel="noreferrer">Express.js</a> and <a href="https://www.mongodb.com/" target="_blank"
+        rel="noreferrer">MongoDB.</a>`,
+    technologies: ["express", "mongodb", "javascript", "css3"]
+  },
   { // API - URL Shortener microservice
     projectUrl: "https://url-shortner-microservice.vercel.app/",
     projectCodeUrl: "https://github.com/marcocosta1618/urlShortener-microservice/blob/main/README.md",
