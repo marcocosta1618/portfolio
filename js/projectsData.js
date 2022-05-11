@@ -12,6 +12,17 @@
 */
 
 export const projects = [
+  { // API - File Metadata microservice
+    projectUrl: "https://file-metadata-microservice-chi.vercel.app/",
+    projectCodeUrl: "https://github.com/marcocosta1618/file-metadata-microservice",
+    imgWebp: "./assets/images/API-fileMetadata_ms.png",
+    imgPng: "./assets/images/API-fileMetadata_ms.webp",
+    imgAlt: "file metadata microservice",
+    p: `A file metadata microservice. Users can upload a file and receive the file name,
+    type, and size in bytes within a JSON response.
+    Made with <a href="https://expressjs.com/" target="_blank" rel="noreferrer">Express.js</a>.`,
+    technologies: ["express", "javascript", "css3"]
+  },
   { // API - Exercise Tracker
     projectUrl: "https://exercise-tracker-three.vercel.app/",
     projectCodeUrl: "https://github.com/marcocosta1618/exercise-tracker",
