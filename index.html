@@ -11,7 +11,7 @@
   <title>Marco Costa - Web Developer</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Syncopate&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon(64x64).png">
   <script src="js/index.js" type="module"></script>
 </head>
@@ -22,7 +22,7 @@
     <div class="bkg-noise"></div>
     <ul>
       <li><a href="#about" data-content="about.">about.</a></li>
-      <li><a href="#projects" data-content="projects.">projects.</a></li>
+      <li><a href="#apps&projects" data-content="apps&projects.">apps<span>&</span>projects.</a></li>
       <li><a href="#contact" data-content="contact.">contact.</a></li>
     </ul>
   </nav>
@@ -54,6 +54,12 @@
             href="https://d3js.org/" rel="noreferrer" target="_blank">D3.js</a>.
         </p>
       </main>
+      <section class="apps">
+        <h3 id="apps&projects">apps.<img class="rewind" src="assets/svg/rewind.svg" alt="rewind icon"></h3>
+        <div class="apps-grid">
+          <!-- html injected by renderApps.js -->
+        </div>
+      </section>
       <section class="projects">
         <h3 id="projects">projects.<img class="rewind" src="assets/svg/rewind.svg" alt="rewind icon"></h3>
         <p>Select a technology to display the projects that use it.</p>
