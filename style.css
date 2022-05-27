@@ -68,6 +68,7 @@ body {
   letter-spacing: 0.0625rem;
   color: #F3F3F3;
   background-color: #222;
+  border: 1px solid red;
 }
 
 h1, h5, h4, h3, h2 {
@@ -661,12 +662,14 @@ button.clicked svg {
 }
 
 @media only screen and (max-width: 48em) {
-  .projects-grid {
+  .apps-grid,
+.projects-grid {
     padding: 0 0.5rem;
   }
 }
 @media only screen and (max-width: 26.5625em) {
-  .projects-grid {
+  .apps-grid,
+.projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
@@ -675,13 +678,16 @@ button.clicked svg {
   }
 }
 @media only screen and (max-width: 23.4375em) {
-  .project-box .overlay {
+  .app-box .overlay,
+.project-box .overlay {
     padding: 4% 0;
   }
-  .project-box .overlay h4:first-child {
+  .app-box .overlay h4:first-child,
+.project-box .overlay h4:first-child {
     margin-bottom: -0.35rem;
   }
-  .project-box .overlay h4:last-child {
+  .app-box .overlay h4:last-child,
+.project-box .overlay h4:last-child {
     margin-top: -0.35rem;
   }
 }

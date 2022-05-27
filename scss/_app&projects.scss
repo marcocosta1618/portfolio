@@ -159,12 +159,14 @@ button {
 // MEDIA QUERIES
 // Tablet (768px)
 @media only screen and (max-width: 48em) {
+    .apps-grid,
     .projects-grid {
         padding: 0 0.5rem;
     }
 }
 // Mobile-L (425px)
 @media only screen and (max-width: 26.5625em) {
+    .apps-grid,
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
@@ -174,6 +176,7 @@ button {
 }
 // MOBILE-M (375px)
 @media only screen and (max-width: 23.4375em) {
+    .app-box,
     .project-box {
         .overlay {
             padding: 4% 0;
