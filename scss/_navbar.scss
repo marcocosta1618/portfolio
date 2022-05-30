@@ -72,25 +72,16 @@ nav {
 }
 
 // MEDIA QUERIES:
-// Mobile-L (425px)
-@media only screen and (max-width: 26.5625em) {
+// layout breakpoint for navbar (447px) and smaller viewport
+@media only screen and (max-width: 27.9375em) {
     nav {
         justify-content: space-between;
         padding-right: 0;
         ul {
             width: 100%;
             text-align: center;
-        }
-    }
-}
-// layout breakpoint 2 (348px) (for navbar)
-@media only screen and (max-width: 21.75em) {
-    nav {
-        ul {
             li {
-                &:nth-child(3) {
-                    padding-top: 0.5rem;
-                }
+                padding-top: 0.5rem;
             }
         }
     }
