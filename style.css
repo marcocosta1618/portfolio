@@ -514,6 +514,10 @@ nav ul li a:hover::before {
 .projects-grid > div.filterOut {
   display: none;
 }
+.apps-grid h4,
+.projects-grid h4 {
+  margin-bottom: 1rem;
+}
 .apps-grid p,
 .projects-grid p {
   line-height: 1.5;

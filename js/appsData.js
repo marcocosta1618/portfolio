@@ -6,6 +6,7 @@
     imgWebp: "",
     imgPng: "",
     imgAlt: "",
+    title: "",
     p: ``,
     technologies: []
   },
@@ -18,6 +19,7 @@ export const apps = [
       imgWebp: "./assets/images/app-WorldAtlas.webp",
       imgPng: "./assets/images/app-WorldAtlas.png",
       imgAlt: "World Atlas App",
+      title: "World Atlas App (Work in progress)",
       p: `An interactive map of the Earth made with <a href="https://d3js.org/" target="_blank" rel="noreferrer">D3</a> and <a href="hthttps://reactjs.org/" target="_blank" rel="noreferrer">React</a>.
          Clicking on a country will retrive the corresponding Wikipedia page's summary about the country, along with the geographical coordinates and flag.
          A selection of images from the country's page is also returned.

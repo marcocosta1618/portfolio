@@ -16,6 +16,7 @@ export default function renderApps() {
 
       const appHTML =           // remove last space
          `<div data-tech="${dataTechAttr.replace(/ $/, '')}">
+         <h4>${app.title}</h4>
           <div class="app-box">
             <div class="overlay">
               <h4><a href=${app.appUrl} rel="noreferrer" target="_blank">view</a></h4>
