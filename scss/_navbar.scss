@@ -19,7 +19,7 @@ nav {
         height: $navbar-height;
         z-index: -1;
         opacity: 0.15;
-        background-image: url('../assets/images/static-noise.png');
+        background-image: url('assets/images/static-noise.png');
         background-size: 150px; // original img size
         animation: static .5s steps(3, jump-both) infinite;
     }

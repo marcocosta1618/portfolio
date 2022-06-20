@@ -6,7 +6,7 @@
   height: 100%;
   z-index: -2;
   opacity: 0.15;
-  background-image: url("../assets/images/static-noise.png");
+  background-image: url("assets/images/static-noise.png");
   -webkit-animation: static 0.5s steps(3, end) infinite;
           animation: static 0.5s steps(3, end) infinite;
 }
@@ -249,7 +249,7 @@ nav .bkg-noise {
   height: 80px;
   z-index: -1;
   opacity: 0.15;
-  background-image: url("../assets/images/static-noise.png");
+  background-image: url("assets/images/static-noise.png");
   background-size: 150px;
   -webkit-animation: static 0.5s steps(3, jump-both) infinite;
           animation: static 0.5s steps(3, jump-both) infinite;
